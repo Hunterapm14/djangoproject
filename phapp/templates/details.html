@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Details</title>
+<script src="{% static 'js/sForm.js' %}"></script>
+</head>
+<body>
+    <h2 style="color:blue;font-family: georgia;text-align: center;">IMAGE DETAILS</h2>
+    <img src="{{data.Photo.url}}" width="200px"><br><br>
+    {{data.PhotoName}}<br><br>
+    {{data.Creator}}
+</body>
+</html>

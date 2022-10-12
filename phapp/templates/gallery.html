@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %} 
+<head>
+    <title>Gallery</title>
+</head>
+<body>
+    <h2 style="color:blue;text-align:center;font-family:georgia">GALLERY</h2>
+ 
+        <table>
+            {% for ig in igs %} 
+            <tr>
+                <td><a href="{% url 'phapp:detail' ig.id%}"><img src="{{ig.Photo.url}}" width="200px" ></a></td>
+            </tr>
+            {% endfor %} 
+        </table>
+
+</body>
+</html>
